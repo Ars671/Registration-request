@@ -1,0 +1,41 @@
+﻿<Window x:Class="Registration_request.Admin"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Registration_request"
+        mc:Ignorable="d"
+        Title="Admin" Height="450" Width="800">
+    <Grid>
+        <TabControl>
+            <TabItem Header="Сотрудник">
+                <Grid Background="#FFE5E5E5">
+                    <DataGrid d:ItemsSource="{d:SampleData ItemCount=5}"/>
+                    <Button Content="Добавить" HorizontalAlignment="Left" Margin="177,0,0,0" VerticalAlignment="Center"/>
+                    <Button Content="Удалить" HorizontalAlignment="Left" Margin="285,0,0,0" VerticalAlignment="Center"/>
+                    <Button Content="Изменить" HorizontalAlignment="Left" Margin="397,0,0,0" VerticalAlignment="Center"/>
+                </Grid>
+
+            </TabItem>
+            <TabItem Header="Клиент">
+                <Grid Background="#FFE5E5E5">
+                    <DataGrid d:ItemsSource="{d:SampleData ItemCount=5}"/>
+                    <Button Content="Добавить" HorizontalAlignment="Left" Margin="133,220,0,0" VerticalAlignment="Top"/>
+                    <Button Content="Удалить" HorizontalAlignment="Left" Margin="287,220,0,0" VerticalAlignment="Top"/>
+                    <Button Content="Изменить" HorizontalAlignment="Left" Margin="413,220,0,0" VerticalAlignment="Top"/>
+                </Grid>
+
+
+            </TabItem>
+            <TabItem Header="Заявка">
+                <Grid Background="#FFE5E5E5">
+                    <DataGrid d:ItemsSource="{d:SampleData ItemCount=5}"/>
+                    <Button Content="Button" HorizontalAlignment="Left" Margin="139,255,0,0" VerticalAlignment="Top"/>
+                    <Button Content="Button" HorizontalAlignment="Left" Margin="250,255,0,0" VerticalAlignment="Top"/>
+                    <Button Content="Button" HorizontalAlignment="Left" Margin="397,255,0,0" VerticalAlignment="Top"/>
+                </Grid>
+            </TabItem>
+        </TabControl>
+
+    </Grid>
+</Window>
